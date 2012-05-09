@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<!-- metatags -->
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>Display: inline-block</title>
+	<!-- css -->
+	<style type="text/css" media="screen">
+		#main{
+			width: 700px;
+			height: 100%;
+			margin: 0 auto;
+			padding: 10px;
+			background-color: gray;
+		}
+		
+		.boxs{
+			width: 150px;
+			height: 150px;
+			line-height: 150px;
+			text-align: center;
+			margin-left: 15px;
+			display: inline-block;
+		}
+		
+		#box1{ background-color: red; }
+		#box2{ background-color: yellow; }
+		#box3{ background-color: blue; }
+		#box4{ background-color: green; }
+		
+		#box-texto{ 
+			padding: 15px;
+			margin-top: 20px; 
+			background-color: #ccc;
+		}
+		
+		p{ margin-bottom: 50px; }
+		
+		span{
+			display: inline-block;
+			height: 25px;
+			background-color: black;
+			color: white;
+			line-height: 25px;
+		}
+		
+		label{
+			display: inline;
+			margin-left: 60px;
+		}
+	</style>
+</head>
+<body>
+    <div id="main">
+        <div class="boxs" id="box1">1</div>
+        <div class="boxs" id="box2">2</div>
+        <div class="boxs" id="box3">3</div>
+        <div class="boxs" id="box4">4</div>
+
+		<div id="box-texto">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis <span>nostrud exercitation ullamco</span> laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			
+			<label for="#">label tem por padrão "display: inline"</label>
+			<label for="#">label tem por padrão "display: inline"</label>
+		</div>
+    </div>
+</body>
+</html>
