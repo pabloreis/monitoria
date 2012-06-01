@@ -1,0 +1,214 @@
+/* reset */
+/*
+Copyright (c) 2011, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 2.9.0
+*/
+html{color:#000;background:#FFF}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,select,p,blockquote,th,td{margin:0;padding:0}
+html,body{height:100%}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,button,caption,cite,code,dfn,em,input,optgroup,option,select,strong,textarea,th,var{font:inherit}
+del,ins{text-decoration:none}
+li{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:baseline}
+sub{vertical-align:baseline}
+legend{color:#000}
+*{outline:0}
+/* end reset */
+
+#main {
+  margin-left:auto;
+  margin-right:auto;
+  width:1000px; 
+}    
+
+#nav {
+  max-width:1000px;
+  height:195px;
+  padding-bottom:15px;
+  border-bottom:1px dotted black;
+}
+
+#nav a {
+  text-decoration:none;
+  color: black;
+  overflow:hidden;
+  font-family:'GothamMediumRegular',Arial,Tahoma,Verdana;
+}
+
+#logo {
+  float:left;
+}
+
+#logo a {
+  overflow:hidden;
+  display:block;
+  margin-right:200px;
+}
+
+#about {
+  float:left;
+  margin-top:50px;
+  margin-right:200px;
+}
+
+#story {
+  float:left;
+  margin-top:50px;
+}
+
+#inp-box{width:100px;height:40px;float:right;margin-top:20px;display:none}
+#slc-sobre,#slc-hist{width:100px !important;height:20px !important;margin-top:0;display:block}
+#slc-sobre{margin-bottom:10px}
+
+#about li, #story li{margin-bottom:7px}
+#about li:first-child,#story li:first-child{color:#EC3620;font-size:20px}
+#about li a:hover,#story li a:hover{text-decoration:underline}
+
+#banner-header {
+  margin-top:35px;
+  margin-left:auto; 
+  margin-right:auto; 
+  width:1000px;  
+}
+
+#banner-header img { 
+  max-width:1000px; 
+  max-height:300px; 
+}
+
+#main-content {
+  padding:20px;
+  width:625px; 
+  float:right;
+}  
+
+#sidebar-container {
+  padding:15px;
+  width:280px; 
+  float:left;
+}   
+
+.sidebar-content {
+   margin:20px; 
+   padding:1px;
+   width:250px;
+   background-color:#DDDDDD; 
+}    
+
+.sidebar-tit {
+   font-weight:bold;
+   padding:10px;
+   background-color:#EC3620;  
+}
+
+.sidebar-tit p{margin:0;padding:0;color:white}    
+
+.sidebar-text {
+   padding:10px;
+   background-color:#FCFCFC;   
+}    
+
+#nav-cont{
+  width:1000px;
+  height:75px;
+  padding-top:25px;
+  margin-bottom:15px;
+  border-top:1px dotted black;
+  border-bottom:1px dotted black;
+  clear:both;
+  overflow:hidden
+}
+
+.frm-busca{width:230px;height:80px;margin-right:90px;margin-left:35px;float:left}
+.frm-busca fieldset{width:230px;height:80px;padding:0}
+.frm-busca fieldset legend{display:none}
+#txt-busca{color:#EC3620;display:block}
+.inp-search,.buscar{float:left}
+
+#nav-cont #films{width:400px;height:75px;float:left;padding:0;margin-top:0;margin-bottom:0}
+#films li{float:left;margin-right:60px}
+#films li .tit-film{color:#EC3620;font-size:18px}
+#films li .more{color:black;font-size:14px}
+.mrg0{margin-right:0 !important}
+
+#search-box{width:100%;height:32px;padding-top:8px;margin-bottom:5px;background-color:#EC3620;display:none}
+#search-box .frm-busca{height:32px;margin:0;float:right}
+
+
+/* Media Queries 
+* É seguindo esse padrão que você organiza os elementos nas diferentes resoluções.
+* Optei por utilizar a medida 'px', deixando os elementos sempre fixos,
+* seria mais interessante organizar mesclar as dimensões dos blocos de acordo com o tamanho
+* da fonte, 'em', pixel e porcentagem.
+*/
+@media (min-width:481px) and (max-width:768px) {
+  #main{width:740px}
+  #nav{width:740px;height:140px}
+  #nav a{font-size:14px}
+  #logo a{margin-right:50px}
+  #logo img{max-width:200px;max-height:150px}
+  #about, #story{margin-top:30px}
+  #about li:first-child,#story li:first-child{font-size:16px}
+  #banner-header{width:740px}
+  #banner-header img{max-width:740px;max-height:222px}            
+  #main-content{width:450px;float:left}
+  #sidebar-container{width:200px;float:left}
+  .sidebar-content{width:160px}
+  #nav-cont{width:740px;position:relative}
+  #frm-busca{display:none}
+  #search-box{display:block}
+  #films{position:absolute;left:50%;margin-left:-200px}
+} 
+
+@media (min-width:321px) and (max-width:480px) {
+  #main{width:450px}
+  #nav{width:450px;height:85px}
+  #nav a{font-size:12px}
+  #logo a{margin-right:20px}
+  #logo img{max-width:150px;max-height:100px}
+  #about, #story{margin-top:17px}
+  #about{margin-right:0px}
+  #about li, #story li{margin-bottom:0}
+  #about li:first-child,#story li:first-child{font-size:14px}            
+  #banner-header{width:450px}
+  #banner-header img{max-width:450px;max-height:135px}
+  #main-content{width:400px}
+  #sidebar-container{width:400px;float:left}
+  .sidebar-content{width:120px;margin:5px;float:left}
+  .sidebar-text{display:none} 
+  #nav-cont{width:450px}
+  #frm-busca{display:none}
+  #search-box{display:block}
+}
+
+@media (max-width: 320px) {
+  #main{width:250px}     
+  #nav{width:250px;height:70px}
+  #logo img{max-width:120px;max-height:70px}
+  #logo a{margin-right:0}
+  #about,#story{display:none}
+  #banner-header{width:275px;margin-top:15px}
+  #banner-header img{max-width:250px;max-height:83px}
+  #main-content{width:250px;padding:0px}
+  #sidebar-container{width:250px;padding:0px}
+  .sidebar-content{width:250px;margin:5px 5px 5px 0}
+  .sidebar-text{display:none}
+  #nav-cont{height:120px;position:relative}
+  #nav-cont,#frm-busca{width:250px} 
+  #frm-busca{position:absolute;left:50%;margin-left:-125px;margin-bottom:30px}
+  /*#inp-search,#buscar{height:25px}*/
+  #inp-box{display:block}
+  #films{position:absolute;left:50%;bottom:0;margin-left:-125px}
+  #films li{margin-right:0}
+  #films li .tit-film{font-size:16px}
+  #films li .more{font-size:14px}
+}
+/* end 
